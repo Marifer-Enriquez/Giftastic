@@ -22,10 +22,10 @@
             </div>
             </div>`);
             $("#singers-gif").append(imagedis);
-            var imageUrl = response.data[i].images.fixed_height_still.url;
+            var imageUrl = response.data[i].images.fixed_height.url;
             $("#cardgif" + i + " .card-img-top").attr("src", imageUrl);
             $("#cardgif" + i + " .card-img-top").attr("data-still", response.data[i].images.fixed_height_still.url);
-            $("#cardgif" + i + " .card-img-top").attr("data-state", "still");
+            $("#cardgif" + i + " .card-img-top").attr("data-state", "animate");
             $("#cardgif" + i + " .card-img-top").addClass ("gif");
             $("#cardgif" + i + " .card-img-top").attr("data-animate", response.data[i].images.fixed_height.url);
             imagedis.attr("alt", "Here's your gif");
